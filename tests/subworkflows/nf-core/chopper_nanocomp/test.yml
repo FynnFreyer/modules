@@ -1,0 +1,11 @@
+## TODO nf-core: Please run the following command to build this file:
+#                nf-core subworkflows create-test-yml
+- name: "chopper_nanocomp"
+  command: nextflow run ./tests/subworkflows/nf-core/chopper_nanocomp -entry test_chopper_nanocomp -c ./tests/config/nextflow.config
+  tags:
+    - "subworkflows"
+    - "subworkflows/chopper_nanocomp"
+  files:
+    - path: "output/chopper_nanocomp/trimmed.fastq.gz"
+    - path: "output/chopper_nanocomp/some_raw.html"
+    - path: "output/chopper_nanocomp/some_trimmed.html"

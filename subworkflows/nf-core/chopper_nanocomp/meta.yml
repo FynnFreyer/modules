@@ -1,0 +1,43 @@
+name: "chopper_nanocomp"
+description: Filter and trim long read data and compare it with raw data.
+keywords:
+  - filter
+  - trimming
+  - compare
+  - fastq
+  - nanopore
+  - qc
+modules:
+  - chopper
+  - nanocomp
+input:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test' ]
+  - fastq:
+      type: file
+      description: FastQ file
+      pattern: "*.{fastq.gz}"
+## TODO nf-core: List all of the variables used as output, including their types and descriptions
+output:
+  - meta:
+      type: map
+      description: |
+        Groovy Map containing sample information
+        e.g. [ id:'test' ]
+  - fastq:
+      type: file
+      description: The trimmed and filtered FastQ produced by chopper.
+      pattern: "*.{bam,cram,sam}"
+  - html_nanocomp_output:
+      type: file
+      description: List of HTML report files produced by NanoComp.
+      pattern: "*.{html}"
+  - versions:
+      type: file
+      description: File containing software versions
+      pattern: "versions.yml"
+authors:
+  - "@FynnFreyer"

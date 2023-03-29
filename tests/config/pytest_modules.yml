@@ -3240,6 +3240,10 @@ subworkflows/bedgraph_bedclip_bedgraphtobigwig:
   - subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/**
   - tests/subworkflows/nf-core/bedgraph_bedclip_bedgraphtobigwig/**
 
+subworkflows/chopper_nanocomp:
+  - subworkflows/nf-core/chopper_nanocomp/**
+  - tests/subworkflows/nf-core/chopper_nanocomp/**
+
 subworkflows/fasta_binning_concoct:
   - subworkflows/nf-core/fasta_binning_concoct/**
   - tests/subworkflows/nf-core/fasta_binning_concoct/**
@@ -3585,10 +3589,6 @@ whamg:
   - modules/nf-core/whamg/**
   - tests/modules/nf-core/whamg/**
 
-wisecondorx/convert:
-  - modules/nf-core/wisecondorx/convert/**
-  - tests/modules/nf-core/wisecondorx/convert/**
-
 windowmasker/mk_counts:
   - modules/nf-core/windowmasker/mk_counts/**
   - tests/modules/windowmasker/mk_counts/**
@@ -3596,6 +3596,10 @@ windowmasker/mk_counts:
 windowmasker/ustat:
   - modules/nf-core/windowmasker/ustat/**
   - tests/modules/windowmasker/ustat/**
+
+wisecondorx/convert:
+  - modules/nf-core/wisecondorx/convert/**
+  - tests/modules/nf-core/wisecondorx/convert/**
 
 yahs:
   - modules/nf-core/yahs/**
